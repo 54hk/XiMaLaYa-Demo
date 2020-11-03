@@ -4,15 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_fff"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="喜马拉雅!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/xtab_layout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/color_eec04c"
+        app:xTabIndicatorHeight="2dp"
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="@color/color_eec04c"
+        app:xTabSelectedTextSize="16sp"
+        app:xTabTextColor="@color/text_666"
+        app:xTabTextSize="13sp"
+        tools:ignore="MissingConstraints" />
 
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xtab_layout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">XiMaLaYa</string>
+    <string name="app_name">HK试听</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
